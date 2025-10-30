@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineInfo</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=br.com.cineinfo";
+            }
+            else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/br/app/cineinfo/id6743642665";
+            }
+        });
+    </script>
+    <style>
+        :root {
+            --primary-color: #ff0000; /* vermelho */
+            --secondary-color: #000000; /* preto */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: var(--secondary-color);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            color: var(--primary-color);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin-bottom: 10px;
+        }
+        .features strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 40px;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 180px;
+            border-radius: 4px;
+        }
+        .download-links {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .download-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .download-links a:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>CineInfo</h1>
+    <p>Conheça o App CineInfo, a ferramenta definitiva para quem não perde um lançamento no cinema! Organize sua experiência cinematográfica de maneira simples e prática.</p>
+</header>
+
+<div class="container">
+    <section class="features">
+        <h2>Recursos</h2>
+        <ul>
+            <li>
+                <strong>Trailers de Filmes:</strong>
+                Assista aos trailers mais recentes antes de ir ao cinema.
+            </li>
+            <li>
+                <strong>Filmes em Cartaz:</strong>
+                Descubra quais filmes estão em exibição nas salas próximas a você.
+            </li>
+            <li>
+                <strong>Próximos Lançamentos:</strong>
+                Fique por dentro dos filmes que em breve estarão nos cinemas.
+            </li>
+            <li>
+                <strong>Busca Rápida:</strong>
+                Encontre qualquer filme com facilidade e rapidez.
+            </li>
+        </ul>
+    </section>
+
+    <section class="image-gallery">
+        <img src="imagens/cineinfo2.png" alt="Imagem 2">
+        <img src="imagens/cineinfo3.png" alt="Imagem 3">
+        <img src="imagens/cineinfo4.png" alt="Imagem 4">
+        <img src="imagens/cineinfo5.png" alt="Imagem 5">
+    </section>
+
+    <div class="download-links">
+        <a href="https://play.google.com/store/apps/details?id=br.com.cineinfo" target="_blank">Baixar para Android</a>
+        <a href="https://apps.apple.com/br/app/cineinfo/id6743642665" target="_blank">Baixar para iOS</a>
+    </div>
+</div>
+</body>
+</html>
